@@ -31,6 +31,7 @@ function AppWrapper() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/project/:id' element={<Project />} />
+          <Route path='*' element={<Home />} />
         </Routes>
         {!hideNav && (
           <Footer />

@@ -9,11 +9,12 @@ export default function Intro() {
       <div className="gradient-box">
         <div className="content">
           <h3>FULL STACK DEVELOPER</h3>
-          <h1>Hi I'm</h1>
           <h1>Jerson Patrick Valdez</h1>
-          <p>My passion lies in the logic behind the screen. 
-            I am constantly refining my skills to build applications that are as efficient as they are useful. 
-            I’m ready to bring my dedication to simplicity and practicality to a professional one.
+          <p>
+            I'm a full-stack developer who loves to create modern web applications. I turn coffee into code and trash ideas into reality.
+          </p>
+          <p>
+            Right now I'm exploring the world of development, learning new technologies and building projects that helps people.
           </p>
 
           <div className="btn-container">

@@ -9,6 +9,8 @@
     gap: 20px;
     position: relative;
     box-sizing: border-box;
+    border-radius: 12px;
+    max-width: 70rem;
 }
 
 .about-container .img-container{
