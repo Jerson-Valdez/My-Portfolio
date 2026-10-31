@@ -1,7 +1,7 @@
 
 .github-activity {
   --github-activity-0: var(--bg-color-alt);
-  --github-activity-1: color-mix(in srgb, var(--sf-dark) 35%, var(--bg-color-alt));
+  --github-activity-1: color-mix(in srgb, var(--sf-light) 35%, var(--bg-color-alt));
   --github-activity-2: color-mix(in srgb, var(--sf-dark) 60%, var(--bg-color-alt));
   --github-activity-3: color-mix(in srgb, var(--sf-light) 75%, var(--bg-color-alt));
   --github-activity-4: var(--fg-primary);
@@ -33,7 +33,7 @@
 }
 
 .github-activity svg rect[data-level="1"] {
-  transform: scale(0.6);
+  transform: scale(0.5);
 }
 
 .github-activity svg rect[data-level="2"] {
@@ -41,11 +41,11 @@
 }
 
 .github-activity svg rect[data-level="3"] {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 .github-activity svg rect[data-level="4"] {
-  transform: scale(1); 
+  transform: scale(1.1); 
 }
 
 .github-activity svg rect:hover {
