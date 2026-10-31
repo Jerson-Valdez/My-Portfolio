@@ -23,6 +23,9 @@ export const allStacks =[
         "stack": [
             {"value": "Node.js", "icon": getStackIconPath('nodejs.svg'), "years": 2},
             {"value": "Java", "icon": getStackIconPath('java.svg'), "years": 4},
+            {"value": "Python", "icon": getStackIconPath('python.svg'), "years": 1},
+            {"value": "Django", "icon": getStackIconPath('django.svg'), "years": 1},
+            {"value": "C#", "icon": getStackIconPath('csharp.svg'), "years": 1},
             {"value": "PHP", "icon": getStackIconPath('php.svg'), "years": 2}
         ]
     },
@@ -30,7 +33,8 @@ export const allStacks =[
         "stack": [
             {"value": "MySQL", "icon": getStackIconPath('mysql.svg'), "years": 3},      
             {"value": "Firebase", "icon": getStackIconPath('firebase.svg'), "years": 2},
-            {"value": "MS SQL", "icon": getStackIconPath('mssql.svg'), "years": 1}    
+            {"value": "MS SQL", "icon": getStackIconPath('mssql.svg'), "years": 1},
+            {"value": "Supabase", "icon": getStackIconPath('supabase.svg'), "years": 1}    
         ]
     },
     {"label": "Version Control", 

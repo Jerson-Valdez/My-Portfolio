@@ -42,32 +42,32 @@ export const projects = [
     },
     {
         "id": 2,
-        "title": "Account Receivables for Multi-Purpose Cooperative",
-        "sub-title": "A web-based application for managing account receivables in a cooperative setting",
-        "category": "Academic",
-        "image": getImagePath('coops.png'),
-        "team-size": 1,
-        "time-line": 3,
-        "my-role": "Full Stack Developer",
+        "title": "CICT-PPMP",
+        "sub-title": "An AI-enhanced project procurement management system for optimized budget reallocation.",
+        "category": "Capstone",
+        "image": getImagePath('cict-ppmp.png'),
+        "team-size": 5,
+        "time-line": "6 Months",
+        "my-role": "Full-Stack Developer",
         "tech-stacks":[
-            {"label": "PHP", "icon": getStackIconPath('php.svg')},
-            {"label": "Javascript", "icon": getStackIconPath('js.svg')},
-            {"label": "HTML5", "icon": getStackIconPath('html5.svg')},
-            {"label": "CSS3", "icon": getStackIconPath('css3.svg')},
-            {"label": "My SQL", "icon": getStackIconPath('mysql.svg')}
+            {"label": "React", "icon": getStackIconPath('react.svg')},
+            {"label": "TypeScript", "icon": getStackIconPath('typescript.svg')},
+            {"label": "Python", "icon": getStackIconPath('python.svg')},
+            {"label": "Django", "icon": getStackIconPath('django.svg')},
+            {"label": "Supabase", "icon": getStackIconPath('supabase.svg')}
         ],
-        "overview": "An individual project Online Account Receivables (OAR) System for a Multi-Purpose Cooperative during my 2nd Year on Web System Technologies subject. This system streamlines the management of cooperative accounts, transactions, and financial records, enhancing efficiency and transparency.",
+        "overview": "The CICT-PPMP is a web-based procurement system designed to transform manual university budget tracking into a centralized, secure platform. It integrates the custom ALAB Engine—a machine learning module utilizing Random Forest and Knapsack algorithms—to analyze historical procurement data and recommend 'In-Lieu' budget reallocations. Built with strict adherence to ISO/IEC 25010:2023 and IAS 2 security standards, the platform provides administrators with an intuitive interface to manage PPMP spreadsheets, track purchase requests, and ensure transparent, data-driven financial decision-making.",
         "features": [
-            {"label": "Login System", "description": "A secure login system prevents unauthorized and unregistered users from accessing the platform."},
-            {"label": "User Management", "description": "Add, Update, Delete, and View Users with different roles and permissions."},
-            {"label": "Account Receivables Management", "description": "Manage member accounts, track receivables, and generate reports."},
-            {"label": "Transaction History", "description": "View detailed transaction history for each member."},
-            {"label": "Notifications and Alerts", "description": "Receive notifications for due payments and important updates via email, toast notifications, and alerts."}
+            {"label": "AI-Assisted Reallocation (ALAB Engine)", "description": "Utilizes a Random Forest algorithm to analyze historical item utilization and recommend underutilized equipment for safe budget deduction."},
+            {"label": "Secure Spreadsheet Ingestion", "description": "Features a multi-stage Excel file uploader with strict 6-parameter schema mapping and validation to securely parse PPMP data without server crashes."},
+            {"label": "Immutable Audit Trail", "description": "Maintains a real-time Procurement Timeline that logs every upload, export, and budget approval with exact user attribution and timestamps."},
+            {"label": "Role-Based Access Control (RBAC)", "description": "Enforces strict privilege separation between Administrators and Standard Users to secure AI retraining, user management, and budget approvals."},
+            {"label": "Granular Data Export & Backup", "description": "Provides a 7-module backup utility allowing administrators to generate full or partial dataset snapshots for immediate disaster recovery."}
         ],
-        "problem-solution": "To modernize a cooperative's manual accounting, I engineered a secure Online Account Receivables system using PHP and MySQL to manage complex user-transaction data. I implemented Role-Based Access Control (RBAC) and automated reporting to ensure scalability and security, resulting in a responsive platform that streamlines administrative workflows while guaranteeing member transparency.",
+        "problem-solution": "To address the inefficiencies of manual spreadsheet-based budget tracking, I engineered an AI-driven Decision Support System using React, Python, and Supabase. The core challenge was safely identifying 'dead-weight' budget allocations without violating strict university procurement regulations. By integrating a machine learning classification model alongside an immutable audit trail and multi-layered security controls, I delivered a highly secure, ISO-compliant platform that automates budget tracking and empowers administrators to make confident, data-backed reallocation decisions.",
         "project-links": {
-            "github": "https://github.com/Jerson-Valdez/ARUnionVZ.git",
-            "live-demo": "https://valdez-project-multipurpose.infinityfreeapp.com/"
+            "github": "https://github.com/Jerson-Valdez/CICT-PPMP.git",
+            "live-demo": "https://cict-ppmp.vercel.app/"
         }
     },
     {
@@ -99,5 +99,5 @@ export const projects = [
             "github": "https://github.com/caetachi/labable.git",
             "live-demo": "https://labable.web.app/"
         }
-    }
+    },
 ]
