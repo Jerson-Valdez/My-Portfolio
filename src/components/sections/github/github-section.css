@@ -1,16 +1,16 @@
-
 .github-activity {
   --github-activity-0: var(--bg-color-alt);
   --github-activity-1: color-mix(in srgb, var(--sf-light) 35%, var(--bg-color-alt));
   --github-activity-2: color-mix(in srgb, var(--sf-dark) 60%, var(--bg-color-alt));
   --github-activity-3: color-mix(in srgb, var(--sf-light) 75%, var(--bg-color-alt));
   --github-activity-4: var(--fg-primary);
-  color: var(--fg-secondary);
-}
-
-.github-activity {
+  width: min(100%, 800px);
+  min-width: 0;
+  max-width: 100%;
   padding: 20px;
+  box-sizing: border-box;
   border-radius: 12px;
+  color: var(--fg-secondary);
 }
 
 .github-activity .github-activity-header {
@@ -20,6 +20,32 @@
 .github-activity .github-activity-header h3 {
   font-size: 1.25rem;
   color: var(--fg-primary);
+}
+
+.github-calendar-frame {
+  width: 100%;
+  min-width: 0;
+}
+
+.github-calendar-frame > article {
+  width: 100%;
+  min-width: 0;
+}
+
+.github-calendar-frame [class*="scroll-container"] {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.github-calendar-frame svg {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .github-activity {
+    padding: 16px 12px;
+  }
 }
 
 .github-activity svg rect {

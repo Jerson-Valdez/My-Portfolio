@@ -13,31 +13,70 @@ const getStackIconPath = (filename) => {
 
 export const projects = [
     {
-        "id": 1,
-        "title": "Mommy's Variety Store",
-        "sub-title": "Desktop Application for Inventory Management, and Kiosk ready POS System",
-        "category": "Academic",
-        "image": getImagePath('variety-store-menu.png'),
-        "team-size": 2,
-        "time-line": 3,
-        "my-role": "Frontend Developer",
-        "tech-stacks":[
-            {"label": "Java", "icon": getStackIconPath('java.svg')},
-            {"label": "MS SQL", "icon": getStackIconPath('mssql.svg')}
+        id: 1,
+        title: "Natural Feeder PH",
+        "sub-title": "E-commerce, Order Tracking, and Store Management Platform",
+        category: "E-commerce",
+        image: getImagePath("natural-feeder-ph.png"),
+        "team-size": 1,
+        "time-line": "3 Months",
+        "my-role": "Full-Stack Developer",
+        "tech-stacks": [
+            { label: "React", icon: getStackIconPath("react.svg") },
+            { label: "JavaScript", icon: getStackIconPath("js.svg") },
+            { label: "Tailwind CSS", icon: getStackIconPath("tailwindcss.svg") },
+            { label: "Firebase", icon: getStackIconPath("firebase.svg") },
+            { label: "Node.js", icon: getStackIconPath("nodejs.svg") }
         ],
-        "overview": "Mommy's Variety Store Management System is a desktop application built with Java Swing for the graphical user interface (GUI) and Microsoft SQL Server as the primary database. The application is designed to manage inventory, categories, and other store-related operations. It also supports a legacy connection to Microsoft Access for backward compatibility with earlier database versions. This project is developed as part of a BSIT (Bachelor of Science in Information Technology) course requirement.",
-        "features": [
-            {"label": "Login System", "description": "A secure login system prevents unauthorized and unregistered users from accessing the platform."},
-            {"label": "Courier Management System", "description": "Allows administrators to add, edit, or delete riders, and filter based on availability."},
-            {"label": "Stock Management System", "description": "Enables administrators to adjust stock quantities and reorder items as needed. It also highlights low-stock items."},
-            {"label": "Cart Management", "description": "Users can manage their shopping cart and retain cart contents even after logging out."},
-            {"label": "Improved UI/UX Experience", "description": "Enhanced user interface design to ensure ease of use and a seamless shopping experience."},
-            {"label": "Administrator Dashboard", "description": "Real-time statistics and data visualization for administrators, including user count, total revenue, and sales metrics."}
+        overview:
+            "Natural Feeder PH is a web platform for browsing and ordering feeder insects, tracking order progress, and managing store operations. Customers can explore the product catalog, build a cart, submit orders, continue conversations through Messenger, and review order status history. Administrators can manage products, inventory, assets, expenses, and order fulfilment through a protected dashboard.",
+        features: [
+            {
+            label: "Product Catalog and Cart",
+            description:
+                "Customers can browse products and bundles, add items to a persistent cart, and review the order total before checkout."
+            },
+            {
+            label: "Order Checkout and Messenger",
+            description:
+                "Customers can submit pickup or delivery orders and continue the conversation with the store through its configurable Messenger link."
+            },
+            {
+            label: "Order Tracking",
+            description:
+                "Customers can view order details, status history, and progress through preparation, readiness, delivery, and completion."
+            },
+            {
+            label: "Admin Order Management",
+            description:
+                "Administrators can create orders, update fulfilment statuses, review incoming orders, and manage order records."
+            },
+            {
+            label: "Product and Inventory Management",
+            description:
+                "Administrators can add and edit products, manage bundles and stock tracking, and remove products from the catalog."
+            },
+            {
+            label: "Assets and Expense Tracking",
+            description:
+                "The asset register records equipment purchases as expenses, helping the store monitor operating costs."
+            },
+            {
+            label: "Financial Dashboard",
+            description:
+                "The dashboard summarizes revenue, expenses, profit, order counts, monthly funds trends, and best-selling products."
+            },
+            {
+            label: "Role-Based Access",
+            description:
+                "Protected admin routes and Firestore rules restrict store management functions to authenticated administrators."
+            }
         ],
-        "problem-solution": "The development process addressed key challenges in scalability, architecture, and user experience. The team successfully migrated the database from MS Access to SQL Server using JDBC, ensuring robust connectivity. To maintain code quality in a collaborative environment, we enforced the MVC pattern and strict Git workflows. Furthermore, the user interface underwent a complete overhaul; using Figma for prototyping, we transitioned from basic JOptionPane inputs to a fully interactive Java Swing interface, significantly enhancing usability and design consistency.",
+        "problem-solution":
+            "The project brings storefront ordering and day-to-day store operations into one application. Customers can submit and track orders without needing an account, while administrators have dedicated tools to manage fulfilment, catalog products, assets, and expenses. Firestore stores the application data, Firebase Authentication supports administrator access, and responsive layouts make the storefront usable on phones and desktop devices.",
         "project-links": {
-            "github": "https://github.com/Jerson-Valdez/BSIT2FG2_PROJECT_IM-OOP-EDP-ADB-IDA.git",
-            "live-demo": "#"
+            github: "https://github.com/Jerson-Valdez/Natural-Feeder-PH.git",
+            "live-demo": "http://natural-feeder-ph.vercel.app/"
         }
     },
     {
@@ -72,7 +111,7 @@ export const projects = [
     },
     {
         "id": 3,
-        "title": "Laundry Shop Management System",
+        "title": "Labable",
         "sub-title": "A modern, efficient, and student-centered web and mobile platform for small to medium-sized laundry shops.",
         "category": "Academic",
         "image": getImagePath('labable.png'),
